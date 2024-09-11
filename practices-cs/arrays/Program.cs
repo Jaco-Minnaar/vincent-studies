@@ -56,6 +56,8 @@ void TestCase(int[] testCase)
             );
             return;
         }
+
+        Console.WriteLine("Calculated Min is correct.");
     }
 
     if (doMax)
@@ -70,6 +72,8 @@ void TestCase(int[] testCase)
             );
             return;
         }
+
+        Console.WriteLine("Calculated Max is correct.");
     }
 
     if (doSum)
@@ -84,6 +88,8 @@ void TestCase(int[] testCase)
             );
             return;
         }
+
+        Console.WriteLine("Calculated Sum is correct.");
     }
 
     if (doAvg)
@@ -98,6 +104,8 @@ void TestCase(int[] testCase)
             );
             return;
         }
+
+        Console.WriteLine("Calculated Average is correct.");
     }
 
     if (doSort)
@@ -110,5 +118,7 @@ void TestCase(int[] testCase)
                 JsonSerializer.Serialize(calcSorted)
             );
         }
+
+        Console.WriteLine("Sort is correct.");
     }
 }
