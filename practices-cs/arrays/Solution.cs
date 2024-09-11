@@ -1,29 +1,39 @@
 namespace Arrays;
 
-public class Solution
+public static class Solution
 {
-    public int[] Sort(int[] input)
+    public static int[] Sort(int[] input)
     {
         // Enter your solution here
+
+        return [];
     }
 
-    public int Max(int[] input)
+    public static int Max(int[] input)
     {
         // Enter your solution here
+
+        return 0;
     }
 
-    public int Min(int[] input)
+    public static int Min(int[] input)
     {
         // Enter your solution here
+
+        return 0;
     }
 
-    public int Sum(int[] input)
+    public static int Sum(int[] input)
     {
         // Enter your solution here
+
+        return 0;
     }
 
-    public double Average(int[] input)
+    public static double Average(int[] input)
     {
         // Enter your solution here
+
+        return 0;
     }
 }
