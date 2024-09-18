@@ -1,0 +1,28 @@
+.home-box {
+    display: flex;
+}
+
+.ops {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 6px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.display-box {
+    display: flex;
+    justify-content: end;
+    font-size: 32px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main-box {
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
