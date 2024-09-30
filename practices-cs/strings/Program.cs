@@ -18,7 +18,7 @@ if (args.Contains("--rev"))
     foreach (var (word, _) in words)
     {
         var expected = string.Join("", word.Reverse());
-        var actual = Solution.ReverseString(word);
+        var actual = Solution.ReverseString2(word);
 
         if (expected != actual)
         {
