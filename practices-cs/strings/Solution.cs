@@ -11,7 +11,7 @@ public static class Solution
         {
             return false;
         }
-        else 
+        else
         {
             return true;
         }
@@ -22,11 +22,14 @@ public static class Solution
         // Vincent's solution here
         var s = "";
 
-        for (int i = word.Length - 1; i >= 0; i--)
+        int i = word.Length - 1;
+        while (i >= 0)
         {
-            var letter = word [i];
+            var letter = word[i];
             var newS = s + letter;
-             s = newS;
+            s = newS;
+
+            i = i - 1;
         }
         return s;
     }
