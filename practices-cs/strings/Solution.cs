@@ -8,4 +8,11 @@ public static class Solution
 
         return false;
     }
+
+    public static string ReverseString(string word)
+    {
+        // Vincent's solution here
+
+        return "";
+    }
 }

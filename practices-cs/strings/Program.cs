@@ -13,20 +13,37 @@
     ("mitochondria", false)
 ];
 
-foreach (var (word, isPalindrome) in words)
+if (args.Contains("--rev"))
 {
-    var actual = Solution.IsPalindrome(word);
-    if (actual != isPalindrome)
+    foreach (var (word, _) in words)
     {
-        Console.WriteLine(
-            "Incorrect. Word: {0}. Expected: {1}. Actual: {2}",
-            word,
-            isPalindrome,
-            actual
-        );
-        return 1;
+        var expected = string.Join("", word.Reverse());
+        var actual = Solution.ReverseString(word);
+
+        if (expected != actual)
+        {
+            Console.WriteLine("Reverse incorrect. Expected: {0}. Actual: {1}.", expected, actual);
+        }
     }
 }
 
-Console.WriteLine("All words are correct. Congratulations!");
+if (args.Contains("--pal"))
+{
+    foreach (var (word, isPalindrome) in words)
+    {
+        var actual = Solution.IsPalindrome(word);
+        if (actual != isPalindrome)
+        {
+            Console.WriteLine(
+                "Incorrect. Word: {0}. Expected: {1}. Actual: {2}",
+                word,
+                isPalindrome,
+                actual
+            );
+            return 1;
+        }
+    }
+
+    Console.WriteLine("All words are correct. Congratulations!");
+}
 return 0;
