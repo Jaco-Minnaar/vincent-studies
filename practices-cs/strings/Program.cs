@@ -23,8 +23,11 @@ if (args.Contains("--rev"))
         if (expected != actual)
         {
             Console.WriteLine("Reverse incorrect. Expected: {0}. Actual: {1}.", expected, actual);
+            return 1;
         }
     }
+
+    Console.WriteLine("All reverse operations are correct. Congratulations!");
 }
 
 if (args.Contains("--pal"))
@@ -44,6 +47,6 @@ if (args.Contains("--pal"))
         }
     }
 
-    Console.WriteLine("All words are correct. Congratulations!");
+    Console.WriteLine("All palindrome calculations are correct. Congratulations!");
 }
 return 0;
