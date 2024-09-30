@@ -33,4 +33,18 @@ public static class Solution
         }
         return s;
     }
+
+    public static string ReverseString2(string word)
+    {
+        var s = "";
+
+        int i = 0;
+        while (i < word.Length)
+        {
+            // Complete here
+
+            i = i + 1;
+        }
+        return s;
+    }
 }
